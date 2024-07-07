@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* 共通部分 
+------------------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Mincho", "Hragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    background-color: black;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+    color: White;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.font {
+    color: white;
+}
+
+/* ヘッダ
+---------------------------------- */
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.logo {
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: center;
+    margin: .47rem 2rem 0 0;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.mainNav a {
+    color: white;
+}
+
+.mainNav a:hover {
+    color: rgb(190, 39, 39);
+    transition: 0.3s;
+}
+
+/* フッター
+------------------------------------- */
+.footerImage {
+    display:flexz;
+    background-position: left bottom;
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+/* ホーム
+-------------------------------------------------------------------- */
+/* キャッチコピー */
+.pageTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    line-height: 1.4;
+}
+
+.animationTitle {
+    animation: fadeInCenter 1.6s  ease-in forwards;
+    transform: translateY(0);
+}
+
+@keyframes fadeInCenter {
+    0% {
+        opacity: 0;
+        transform: translate(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(1);
+    }
+}
+/* メイン画像 */
+.mainImage {
+    display: block;
+    margin: 0 auto 3.5rem;
+    width: 600px;
+}
+
+.about {
+    max-width: 765px;
+    padding: 0 1.5rem 1.5rem 0;
+    margin: 3rem auto 4rem;
+    border: solid 2px #432;
+
+}
+
+/* 各記事*/
+.content {
+    margin-top: 2rem;
+}
+
+.content,
+.font h3 {
+    border-bottom: solid white 1px;
+}
+
+/* 本文 */
+.mainText {
+    margin-top: 1rem;
+    line-height: 2;
+}
+
+.movie {
+    display: block;
+    margin: 0 auto 0;
+}
+
+/* Contents */
+.link {
+    text-align: center;
+}
+
+.link h2:hover {
+    color: rgb(190, 39, 39);
+    transition: 0.3s;
+}
+
+/* 各ボス紹介ページ 
+---------------------------------------------------------------------*/
+.heading {
+    text-align: center;
+}
+
+.aboutBoss {
+    max-width: 1150px;
+    padding: 0 1.5rem 1.5rem 0;
+    margin: 3rem auto 4rem;
+    border: solid 2px #432;
+
+}
+
+.grid {
+    display: grid;
+    gap: .5rem;
+    /* grid-template-columns: repeat(1, 1fr); */
+}
+
+.item img {
+    margin-top: 1rem;
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item p {
+    margin-left: 1rem;
+}
+
+.item {
+    display: flex;
+}
+
+/* アイテム紹介ページ
+---------------------------------------------------------------------- */
+.aboutItem {
+    max-width: 950px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+    border: solid 2px #432;
+}
+
+.gridArea {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.itemArea img {
+    aspect-ratio: 1.414/1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.itemText {
+    text-align: left;
+}
+
+/* YOU DIED
+------------------------------------------------------------------------ */
+.animation {
+    background-color: rgb(15, 15, 15);
+    color: rgb(190, 39, 39);
+    margin-top: 16.5rem;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    width: 100%;
+    height: auto;
+    animation: fadeInCenter 5s ease-in-out forwards;
+    transform: translateY(0);
+}
+
+@keyframes fadeInCenter {
+    0% {
+        opacity: 0;
+        transform: translate(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(1);
+    }
+}
